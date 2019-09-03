@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen_2"
+    android:orientation="vertical"
+    android:background="#f2f2f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next"
+            android:padding="10dp"
+            android:rotation="180"
+            android:tint="#3D3D3D"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Kvittering"
+            android:textColor="#000"
+            android:gravity="center"
+            android:fontFamily="@font/abeezee"
+            android:textStyle="bold"
+            android:layout_weight="7"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_upload"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_information"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:id="@+id/top_layout"
+        android:paddingRight="40dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/round_shape"
+                android:backgroundTint="#847e8d">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/main_ticket"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_ticket"
+                android:layout_height="380dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Du overforte penge"
+                    android:fontFamily="@font/abeezee"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/abeezee"
+                    android:id="@+id/amount"
+                    android:text="100 kr"
+                    android:textSize="36sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arrowapp"
+                        android:tint="#979797"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="#FFC107"
+                            app:civ_border_width="2dp"
+                            android:layout_marginRight="10dp"
+                            app:civ_border_color="#00000000"/>
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:text="LL"
+                            android:id="@+id/thumb_text"
+                            android:textSize="26sp"
+                            android:textColor="#fff"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lotte Bach Larsen"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:id="@+id/name"
+                            android:fontFamily="@font/abeezee"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+45 53 85 65"
+                            android:id="@+id/phone"
+                            android:fontFamily="@font/abeezee"
+                            android:textColor="#4B000000"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="20dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/abeezee"
+                    android:id="@+id/currentTime"
+                    android:text="20.2019.22 20:45"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Transaktionsoplysninger"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/abeezee"
+                    android:textColor="#3F51B5"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

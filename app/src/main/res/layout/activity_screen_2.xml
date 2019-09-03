@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen_2"
+    android:orientation="vertical"
+    android:background="#f2f2f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_next"
+            android:padding="10dp"
+            android:rotation="180"
+            android:tint="#3D3D3D"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Send penge"
+            android:textColor="#000"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center"
+            android:layout_weight="7"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:src="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:id="@+id/top_layout"
+        android:paddingRight="40dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/round_shape"
+                android:backgroundTint="#847e8d">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_shape_ticket_down"
+                android:layout_height="15dp">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="1,00 kr"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/abeezee"
+            android:textColor="#000"
+            android:gravity="center"
+            android:id="@+id/amount"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arrowapp"
+                android:tint="#979797"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="#FFC107"
+                    app:civ_border_width="2dp"
+                    android:layout_marginRight="10dp"
+                    app:civ_border_color="#00000000"/>
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="LL"
+                    android:id="@+id/thumb_text"
+                    android:textSize="26sp"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lotte Bach Larsen"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    android:fontFamily="@font/abeezee"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+45 53 85 65"
+                    android:id="@+id/phone"
+                    android:fontFamily="@font/abeezee"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="55dp"
+            android:background="@drawable/round_shape_edit_left"
+            android:padding="5dp"
+            android:hint="Tilfoj kommentar"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/abeezee"
+            android:textSize="18sp"
+
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:layout_height="55dp"
+            android:padding="8dp"
+            android:background="@drawable/round_shape_edit_right"
+
+            android:src="@drawable/camera"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:paddingTop="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@drawable/visa"
+            android:text="Visa Credit\n**** 0630"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/abeezee"
+            android:drawableRight="@drawable/ic_next"
+            android:gravity="center|start"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:drawablePadding="10dp"
+            android:background="@drawable/round_shape"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp">
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/Swipe_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            app:inner_text="Send penge"
+            app:button_background="@drawable/round_shape_swipe_btn"
+            android:backgroundTint="@color/colorAccent"
+            app:inner_text_background="@drawable/round_shape_swipe"
+            app:button_image_disabled="@drawable/ic_next"
+            app:inner_text_bottom_padding="18dp"
+            app:inner_text_top_padding="18dp"
+            app:inner_text_size="20sp"
+            app:button_bottom_padding="18dp"
+            app:button_left_padding="18dp"
+            app:button_right_padding="18dp"
+            app:button_top_padding="18dp"
+            app:button_image_enabled="@drawable/ic_next">
+
+        </com.ebanx.swipebtn.SwipeButton>
+
+    </LinearLayout>
+
+</LinearLayout>
